@@ -2,9 +2,11 @@ import axios from 'axios';
 const BASE_URL = import.meta.env.VITE_BASE_URL;
 const SERVER_URL = import.meta.env.VITE_SERVER_URL;
 
+const SERVER = `https://mern-memories-app-api.onrender.com`;
+
 // create axios instance
 export const API = axios.create({
-  baseURL: SERVER_URL || BASE_URL,
+  baseURL: SERVER || BASE_URL,
 
   // withCredentials: true,
 });
