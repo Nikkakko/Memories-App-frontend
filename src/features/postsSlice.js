@@ -1,8 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import { API } from '../api';
 
-const BASE_URL = 'http://localhost:5000';
-
 const initialState = {
   posts: [],
 
