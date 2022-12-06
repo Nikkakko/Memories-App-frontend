@@ -108,9 +108,6 @@ const StyledMedia = styled(CardMedia)`
   padding-top: 56.25%;
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: darken;
-
-  @media (max-width: 375px) {
-  }
 `;
 
 const StyledCard = styled(Card)`
