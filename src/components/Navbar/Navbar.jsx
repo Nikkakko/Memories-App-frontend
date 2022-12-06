@@ -78,10 +78,17 @@ const StyledAppBar = styled.div`
   padding: 0 10px;
   align-items: center;
   box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.3);
+
+  @media (max-width: 375px) {
+  }
 `;
 
 const StyledImage = styled.img`
   margin-left: 15px;
+
+  @media (max-width: 375px) {
+    display: none;
+  }
 `;
 
 const StyledHeading = styled(Typography)`
@@ -90,11 +97,18 @@ const StyledHeading = styled(Typography)`
   text-transform: uppercase;
   font-weight: 500 !important;
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif !important;
+
+  @media (max-width: 375px) {
+    font-size: 1rem !important;
+  }
 `;
 
 const BrandContainer = styled.div`
   display: flex;
   align-items: center;
+
+  @media (max-width: 375px) {
+  }
 `;
 
 const StyledToolbar = styled(Toolbar)`
@@ -116,6 +130,12 @@ const StyledAvatar = styled(Avatar)`
 const StyledUsername = styled(Typography)`
   display: flex;
   align-items: center;
+
+  @media (max-width: 375px) {
+    /* display: none; */
+    font-size: 0.8rem !important;
+    justify-content: center;
+  }
 `;
 
 const LogoutButton = styled(Button)`
@@ -123,6 +143,10 @@ const LogoutButton = styled(Button)`
 
   &:hover {
     background-color: #f5005699 !important;
+  }
+
+  @media (max-width: 375px) {
+    font-size: 0.7rem !important;
   }
 `;
 
@@ -132,6 +156,10 @@ const AuthButton = styled(Button)`
 
   &:hover {
     background-color: #5c6bc0 !important;
+  }
+
+  @media (max-width: 375px) {
+    font-size: 0.8rem !important;
   }
 `;
 
