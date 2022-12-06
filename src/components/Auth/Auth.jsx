@@ -18,6 +18,7 @@ import Input from './Input';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { signIn, signUp } from '../../features/authSlice';
+import { useEffect } from 'react';
 
 const initialState = {
   firstName: '',
@@ -43,6 +44,11 @@ const Auth = () => {
       dispatch(signIn(formData));
     }
     navigate('/');
+
+    //set  timeout
+    setTimeout(() => {
+      window.location.reload();
+    }, 6000);
   };
 
   const handleChange = e => {
