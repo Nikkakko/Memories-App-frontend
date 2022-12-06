@@ -4,7 +4,7 @@ const SERVER_URL = import.meta.env.VITE_SERVER_URL;
 
 // create axios instance
 export const API = axios.create({
-  baseURL: BASE_URL || SERVER_URL,
+  baseURL: SERVER_URL || BASE_URL,
 });
 
 // set token to axios instance
