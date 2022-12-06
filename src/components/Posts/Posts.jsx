@@ -6,7 +6,7 @@ import { Grid, CircularProgress } from '@mui/material';
 const Posts = ({ setCurrentId }) => {
   const { posts } = useSelector(state => state.posts);
 
-  return !posts.length ? (
+  return !posts?.length ? (
     <CircularProgress />
   ) : (
     <Grid container alignItems='stretch' spacing={3}>
